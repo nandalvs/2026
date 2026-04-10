@@ -1,0 +1,127 @@
+// Exercicio 1 - Verificação de Maioridade
+let idade = Number(prompt("Quantos anos você tem?"))
+if(idade >= 18) {
+    console.log("Você é de Maior")
+} else {
+    console.log("Você é menor de idade")
+}
+console.log("---------------")
+
+// Exercicio 2 - Verificação de Paridade
+let numero = Number(prompt("Digite um número!"))
+let aux =  numero % 2
+if(aux == 0) {
+    console.log("Par")
+} else{
+    console.log("Impar")
+}
+console.log("---------------")
+
+// Exercicio 3 - Verificação de Aprovado
+let nota = Number(prompt("Qual foi sua nota??"))
+if(nota >= 7) {
+    console.log("Aprovado")
+} else {
+    console.log("Reprovado")
+}
+console.log("---------------")
+
+// Exercicio 4 - Comparar Idade para Entrada em Evento
+let verificação = Number(prompt("Qual sua idade?"))
+if(verificação >= 18) {
+    console.log("Entrada permitida")
+} else {
+    console.log("Entrada Proibida!")
+}
+console.log("---------------")
+
+// Exercicio 5 - Verificar Senha
+let senha = prompt("Digite a sua senha:")
+if(senha == "1234") {
+    console.log("Senha correta ")
+} else {
+    console.log("Senha incorreta")
+}
+console.log("---------------")
+
+// Exercicio 6 - Verificar Temperatura
+let temp = Number(prompt("Qual a Temperatura? "))
+if(temp >= 30){
+    console.log("Está quente")
+} else {
+    console.log("Está frio")
+}
+console.log("---------------")
+
+// Exercicio 7 - Verificar se Número é Positivo ou Negativo
+let num = Number(prompt("Digite o numero: "))
+if(num > 0) {
+    console.log("Numero positivo")
+} else {
+    console.log("Numero negativo")
+}
+console.log("---------------")
+
+// Exercicio 8 - Verificar Saldo Bancário
+let salario = Number(prompt("Qual seu salário?"))
+let saque = Number(prompt("Qual seu saque?"))
+if( saque >= salario) {
+    console.log("Saldo insuficiente")
+} else {
+    console.log("Saque realizado")
+}
+console.log("---------------")
+
+// Exercicio 9 - Verificar Desconto
+let comp = Number(prompt("Qual valor da compra?"))
+if(comp >= 200) {
+    console.log("Desconto aplicado")
+} else {
+    console.log("Sem desconto")
+}
+console.log("---------------")
+
+// Exercicio 10 - Verificar Número Maior
+let n1 = Number(prompt("Informe um número"))
+let n2 = Number(prompt("Informe outro número"))
+if(n1 < n2) {
+    console.log("O primeiro é Maior")
+} else {
+    console.log("O segundo é menor")
+}
+console.log("---------------")
+
+// Exercicio 11 - Verificar Login
+let login = prompt("Login: ")
+if(login == "admin") {
+    console.log("Acesso Permitido")
+} else {
+    console.log("Acesso Negado")
+}
+console.log("---------------")
+
+// Exercicio 12 - Classificação de Nota
+let notinha = Number(prompt("Qual foi sua nota?"))
+if(notinha >= 9) {
+    console.log("Exclente!")
+} else{
+    console.log("Pode melhorar")
+}
+console.log("---------------")
+
+// Exercicio 13 - Verificar Horário
+let hora = Number(prompt("Que horas são?"))
+if( hora == 8 && hora <18) {
+    console.log("Horário de Funcionamento")
+} else {
+    console.log("Fora do horário")
+}
+console.log("---------------")
+
+// Exercicio 14 - Verificar Cadastro
+let cad = prompt("Você tem cadastro?")
+if(cad == "sim") {
+    console.log("Usuário cadastrado")
+} else {
+    console.log("Cadastro necessário")
+}

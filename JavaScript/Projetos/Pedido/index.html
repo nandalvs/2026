@@ -1,0 +1,121 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedido</title>
+
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: radial-gradient(circle at center, #7a0000, #2b0000 80%);
+            background-attachment: fixed;
+            font-family: 'Georgia', 'Times New Roman', serif;
+        }
+
+        .container {
+            background: rgba(0,0,0,0.45);
+            padding: 60px 40px;
+            border-radius: 25px;
+            text-align: center;
+            box-shadow: 0 0 40px rgba(255, 0, 0, 0.35);
+            border: 1px solid rgba(255, 0, 0, 0.25);
+        }
+
+        h1 {
+            color: #f5f5f5;
+            text-align: center;
+            font-size: 60px;
+            font-weight: 500;
+            letter-spacing: 2px;
+            margin-bottom: 20px;
+        }
+
+        .sub {
+            color: #d6b3b3;
+            font-size: 18px;
+            margin-bottom: 40px;
+            letter-spacing: 1px;
+        }
+
+        button {
+            background: linear-gradient(145deg, #b30000, #7a0000);
+            color: aliceblue;
+            font-size: 28px;
+            border-radius: 12px;
+            padding: 15px 35px;
+            width: 180px;
+            border: 1px solid rgba(255,255,255,0.1);
+            margin: 30px;
+            cursor: pointer;
+            transition: all 0.25s ease;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+        }
+
+        button:hover {
+            transform: scale(1.05);
+            background: linear-gradient(145deg, #cc0000, #990000);
+        }
+
+        .botoes {
+            display: flex;
+            justify-content: center;
+        }
+
+        .botaoN button {
+            background: transparent;
+            border: 1px solid #666;
+            color: #bbb;
+        }
+
+        .botaoN button:hover {
+            border-color: #ff0000;
+            color: #fff;
+        }
+
+        .footer {
+            margin-top: 30px;
+            font-size: 12px;
+            color: #777;
+            letter-spacing: 1px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Quer se casar comigo?</h1>
+        <div class="sub">Vamos jogar o dia inteiro juntos e maratonar One piece</div>
+
+        <div class="botoes">
+            <div class="botaoS">
+                <button onclick="sim()">Sim</button>
+            </div>
+            <div class="botaoN">
+                <button id="botao" onclick="desvia()" onmouseover="desvia()" >Não</button>
+            </div>
+        </div>
+
+        <div class="footer">Seja honesto!</div>
+    </div>
+
+      <script>
+        function sim() {
+            location.href = "https://youtu.be/5_9hjkG5q2M?si=Ea0hzDurRKprJrIM"
+        }
+        function desvia() {
+            let botao = document.getElementById("botao")
+            botao. style. position = "Absolute"
+            botao.style.bottom = gerarPosicao(10,80)
+            botao.style.left = gerarPosicao(10,80)
+        }
+        function gerarPosicao(min, max) {
+            return (Math.random() *(max-min)+min)+"%"
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+// Laço de Repetição - For
+console.log("Bom dia")
+console.log("Bom dia")
+console.log("Bom dia")
+console.log("Bom dia")
+
+let contador = 0
+for(let i = contador; i < 8; i++) {
+    console.log("Bom dia usando For")
+}
+console.log("---------------------------")
+for(let i = 1; i <= 6; i++) {
+    console.log(i)
+}
+console.log("---------------------------")
+//Contagem regressiva
+for(let i = 10; i >= 1; i--) {
+    console.log(i)
+}
+console.log("---------------------------")
+//Peça 5 valores para o usuário e verifique se é maior que 10 ou não
+for(let i = 1; i <= 5; i++) {
+    let numero = Number(prompt("Informe um número"))
+    if (numero > 10) {
+        console.log("é maior que 10")
+    } else {
+        console.log("Não é maior que 10")
+    }
+}
+console.log("---------------------------")
+let soma = 0
+for(let i = 1; i <= 3; i++) {
+    let numero = Number(prompt("Digite um numero"))
+    soma = soma + numero
+}
+console.log("O resultado final é: ", soma)
+console.log("---------------------------")
+/* Peça um número para o usuário e mostre a tabuada dele */
+
+let valor = Number(prompt("Escolha um número!"))
+for(let i = 1; i <=10; i++) {
+    let resultado = valor * i
+    console.log(valor, " X ", i , " = ", resultado)
+}
+console.log("---------------------------")
+/* Em um passseio escolar, um grupo de cinco alunos são organizados de acordo com o número que receberam. Se o número for maior ou igual a 10, diga "grupo A", senão, diga "Grupo B" */
+for(let i = 1; i <= 5; i++) {
+    let numero = Number(prompt("Qual seu número?"))
+    if(numero >=10) {
+        console.log("Grupo A")
+    } else {
+        console.log("Grupo B")
+    }
+}
