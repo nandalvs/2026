@@ -1,0 +1,66 @@
+.ativo{
+    background: #dbeafe;
+    color: #1e3a8a;
+}
+
+.destaque{
+    border: 2px solid #94a3b8;
+    background: #fef9c3;
+}
+
+.grande{
+    font-size: 30px;
+}
+
+.escondido{
+    display: none;
+}
+
+.hover{
+    background: #e0f2fe;
+}
+
+.botao{
+    background: #bbf7d0;
+    border: 2px solid #4ade80;
+    color: #065f46;
+}
+
+.selecionado{
+    background: #fde68a;
+}
+
+.dark{
+    background: #1e293b;
+    color: #e2e8f0;
+}
+
+#menu{
+    display: none;
+    background: #f1f5f9;
+    padding: 10px;
+}
+
+.mostrar{
+    display: block;
+}
+
+.cores{
+    background: #fbcfe8;
+}
+
+.borda{
+    border: 2px solid #cbd5f5;
+}
+
+.vermelho{
+    background: rgb(243, 93, 93);
+}
+
+.azul{
+    background: rgb(115, 115, 255);
+}
+
+.verde{
+    background: rgb(146, 219, 146);
+}

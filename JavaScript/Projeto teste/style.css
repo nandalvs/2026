@@ -1,0 +1,261 @@
+/* ========================= STYLE.CSS ========================= */
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins', sans-serif;
+}
+
+body{
+  background:#F7F4D5;
+  min-height:100vh;
+  overflow-x:hidden;
+  position:relative;
+}
+
+/* FORMAS */
+
+.top-shape{
+  position:absolute;
+  top:0;
+  right:0;
+  width:450px;
+  height:320px;
+  background:#487F84;
+  border-bottom-left-radius:250px;
+  z-index:0;
+}
+
+.bottom-shape{
+  position:absolute;
+  bottom:-100px;
+  left:-100px;
+  width:350px;
+  height:350px;
+  background:#D3968C;
+  border-top-right-radius:250px;
+  opacity:0.7;
+}
+
+/* HEADER */
+
+header{
+  width:100%;
+  height:110px;
+  background:#839958;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:0 70px;
+  position:relative;
+  z-index:10;
+  box-shadow:0 4px 15px rgba(0,0,0,0.08);
+}
+
+/* LOGO */
+
+.logo-area{
+  display:flex;
+  align-items:center;
+  gap:15px;
+}
+
+.logo-area img{
+  width:70px;
+  height:70px;
+  object-fit:contain;
+}
+
+.logo-area h2{
+  font-size:34px;
+  color:#F7F4D5;
+  font-weight:600;
+}
+
+/* MENU */
+
+.header-menu{
+  display:flex;
+  gap:35px;
+}
+
+.header-menu a{
+  text-decoration:none;
+}
+
+.header-menu i{
+  font-size:28px;
+  color:#0A3323;
+  transition:0.3s;
+}
+
+.header-menu i:hover{
+  transform:scale(1.1);
+}
+
+.active-heart{
+  color:#F7F4D5 !important;
+}
+
+/* MAIN */
+
+main{
+  padding:50px 70px 80px;
+  position:relative;
+  z-index:2;
+}
+
+/* TÍTULO */
+
+.title-area{
+  margin-bottom:60px;
+}
+
+.title-area h1{
+  font-size:80px;
+  color:#105666;
+  font-family:Georgia, serif;
+}
+
+.title-area p{
+  font-size:24px;
+  color:#105666;
+  margin-top:10px;
+}
+
+/* GRID */
+
+.books-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:40px;
+}
+
+/* CARD */
+
+.book-card{
+  background:white;
+  padding:20px;
+  border-radius:25px;
+  box-shadow:0 10px 25px rgba(0,0,0,0.08);
+  transition:0.3s;
+}
+
+.book-card:hover{
+  transform:translateY(-5px);
+}
+
+/* IMAGEM */
+
+.book-image{
+  background:#D3968C;
+  border-radius:18px;
+  padding:10px;
+}
+
+.book-image img{
+  width:100%;
+  height:350px;
+  object-fit:cover;
+  border-radius:12px;
+}
+
+/* CONTEÚDO */
+
+.book-content{
+  margin-top:20px;
+}
+
+.book-info{
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-start;
+}
+
+.book-info h2{
+  font-size:24px;
+  color:#1d1d1d;
+}
+
+.book-info span{
+  font-size:20px;
+  color:#333;
+}
+
+/* ÍCONES DOS CARDS */
+
+.icons{
+  display:flex;
+  gap:15px;
+}
+
+.icons i{
+  font-size:28px;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.fa-cart-shopping{
+  color:#0A3323;
+}
+
+.remove-book{
+  color:#D3968C;
+}
+
+.icons i:hover{
+  transform:scale(1.1);
+}
+
+/* BOTÃO */
+
+button{
+  margin-top:20px;
+  width:100%;
+  height:52px;
+  border:none;
+  border-radius:15px;
+  background:#839958;
+  color:white;
+  font-size:20px;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+button:hover{
+  background:#72844c;
+}
+
+/* RESPONSIVO */
+
+@media(max-width:900px){
+
+  header{
+    padding:20px;
+    flex-direction:column;
+    height:auto;
+    gap:20px;
+  }
+
+  .logo-area{
+    flex-direction:column;
+  }
+
+  .logo-area h2{
+    font-size:28px;
+  }
+
+  main{
+    padding:20px;
+  }
+
+  .title-area h1{
+    font-size:55px;
+  }
+
+  .books-grid{
+    justify-items:center;
+  }
+
+}

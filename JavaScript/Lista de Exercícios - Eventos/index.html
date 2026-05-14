@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercícios Eventos</title>
+</head>
+<body>
+
+    <!-- 1 -->
+    <p id="texto1">Texto original</p>
+    <button onclick="trocarTexto()">Clique aqui</button>
+
+    <hr>
+
+    <!-- 2 -->
+    <button onclick="mudarCor()">Mudar cor da página</button>
+
+    <hr>
+
+    <!-- 3 -->
+    <p id="contador">0</p>
+    <button onclick="aumentar()">Aumentar</button>
+
+    <hr>
+
+    <!-- 4 -->
+    <p id="texto4">Esse texto vai sumir</p>
+    <button onclick="esconder()">Esconder</button>
+
+    <hr>
+
+    <!-- 5, 6, 7, 8 -->
+    <input type="text" id="inputTexto" onkeyup="espelho()">
+    <p id="saida"></p>
+    <p id="contadorCaracter"></p>
+    <p id="validacao"></p>
+
+    <hr>
+
+    <!-- 9 -->
+    <div id="caixa" onmouseover="mudarCorDiv()" onmouseout="voltarCor()"
+    style="width:200px; height:100px; background-color:gray;">
+    </div>
+
+    <hr>
+
+    <!-- 10 -->
+    <button onmouseover="mostrarMensagem()">Passe o mouse</button>
+    <p id="mensagem" style="display:none;">Surpresa!</p>
+
+    <hr>
+
+    <!-- 11 -->
+    <p id="texto11" onmouseover="trocarFrase()">Passe o mouse aqui</p>
+
+    <hr>
+
+    <!-- 12 -->
+    <input type="text" id="campoFinal" onkeyup="mostrarFinal()">
+    <p id="saidaFinal"></p>
+    <button onclick="limpar()">Limpar</button>
+
+<script src="script.js"></script>
+</body>
+</html>
