@@ -1,0 +1,9 @@
+.pergunta{
+background-color: lightpink;
+cursor: pointer;
+margin-top: 20px 0;
+}
+.resposta{
+background-color: lightgoldenrodyellow;
+display: none;
+}
