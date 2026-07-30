@@ -60,3 +60,31 @@ for (let i = 1; i <= 10; i++) {
     let tabuada = num1 * i
     console.log(num1 + " x " + i + " = " + tabuada)
 }
+console.log("--------------------------------")
+
+//ARRAY
+let frutas = ["Maçã", "Banana", "Laranja"]
+//tamanho = 3
+console.log(frutas[1]) //Banana
+console.log(frutas)
+
+frutas.pop() //remove o último elemento 
+console.log(frutas)
+
+frutas.push("Uva") //adiciona um elemento no final
+console.log(frutas)
+
+frutas.shift() //remove o primeiro elemento
+console.log(frutas)
+
+frutas.unshift("Morango") //adiciona um elemento no início
+console.log(frutas)
+
+console.log(frutas.length) //length = tamanho do array
+
+console.log(frutas.includes("manga")) //verifica se o elemento existe no array, retorna true ou false
+
+console.log(frutas.indexOf("Uva")) //retorna o índice do elemento, se não existir retorna -1
+
+console.log(frutas.reverse()) //inverte a ordem do array
+console.log("--------------------------------")
