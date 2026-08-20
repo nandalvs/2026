@@ -6,127 +6,257 @@
     <title>Revisão Parte 05</title>
 
     <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 30px;
+            font-family: Arial, sans-serif;
+            background-color: #111111;
+            color: white;
+        }
+
+        h1 {
+            text-align: center;
+            color: #c9c9c9;
+            margin-bottom: 10px;
+        }
+
+        .subtitulo {
+            text-align: center;
+            color: #888888;
+            margin-bottom: 30px;
+        }
+
+        .atividade {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 25px;
+            background-color: #1c1c1c;
+            border: 1px solid #333333;
+            border-left: 5px solid #8b0000;
+            border-radius: 10px;
+        }
+
+        h2 {
+            margin-top: 0;
+            color: #d6d6d6;
+        }
+
+        input {
+            padding: 10px;
+            margin: 5px;
+            border: 1px solid #555555;
+            border-radius: 5px;
+            background-color: #292929;
+            color: white;
+        }
+
+        input:focus {
+            outline: none;
+            border-color: #a00000;
+        }
+
+        button {
+            padding: 10px 18px;
+            margin: 5px;
+            border: none;
+            border-radius: 5px;
+            background-color: #8b0000;
+            color: white;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        button:hover {
+            background-color: #b00000;
+        }
+
+        p {
+            color: #cccccc;
+        }
+
+        #caixa {
+            width: 200px;
+            height: 100px;
+            background-color: lightblue;
+            border-radius: 8px;
+            margin: 15px 0;
+        }
+
         .destaque {
             color: white;
-            background-color: lightpink;
-            border: 5px solid lightblue;
+            background-color: #8b0000;
+            border: 5px solid #d0d0d0;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        #img {
+            width: 300px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 8px;
+            display: block;
+            margin: 15px 0;
+        }
+
+        .resultado {
+            font-size: 18px;
+            color: #dddddd;
+            font-weight: bold;
         }
     </style>
 </head>
 
 <body>
 
+    <h1>REVISÃO - PARTE 05</h1>
+    <p class="subtitulo">JavaScript • DOM • Eventos</p>
+
+
     <!-- 1 - Digitação -->
 
-    <input type="text" id="input">
-    <p id="mensagem"></p>
+    <div class="atividade">
+        <h2>1 - Digitação</h2>
 
-    <br><hr><br>
+        <input type="text" id="input" placeholder="Digite alguma coisa">
+
+        <p id="mensagem"></p>
+    </div>
 
 
     <!-- 2 - Troca de texto -->
 
-    <button id="botao">Passe o mouse aqui</button>
+    <div class="atividade">
+        <h2>2 - Troca de texto</h2>
 
-    <br><hr><br>
+        <button id="botao">Passe o mouse aqui</button>
+    </div>
 
 
     <!-- 3 - Escondendo elementos -->
 
-    <p id="texto">Esse texto vai desaparecer</p>
-    <button id="esconder">Dê dois cliques</button>
+    <div class="atividade">
+        <h2>3 - Escondendo elementos</h2>
 
-    <br><hr><br>
+        <p id="texto">Esse texto vai desaparecer</p>
+
+        <button id="esconder">Dê dois cliques</button>
+    </div>
 
 
     <!-- 4 - Alterando a fonte -->
 
-    <p id="textoFonte">Esse texto vai mudar de tamanho</p>
-    <button id="fonte">Alterar tamanho</button>
+    <div class="atividade">
+        <h2>4 - Alterando a fonte</h2>
 
-    <br><hr><br>
+        <p id="textoFonte">Esse texto vai mudar de tamanho</p>
+
+        <button id="fonte">Alterar tamanho</button>
+    </div>
 
 
     <!-- 5 - Mostrar e esconder -->
 
-    <button id="mostrar">Mostrar</button>
-    <button id="esconder2">Esconder</button>
+    <div class="atividade">
+        <h2>5 - Mostrar e esconder</h2>
 
-    <p id="paragrafo">Esse parágrafo pode aparecer e desaparecer</p>
+        <button id="mostrar">Mostrar</button>
+        <button id="esconder2">Esconder</button>
 
-    <br><hr><br>
+        <p id="paragrafo">Esse parágrafo pode aparecer e desaparecer.</p>
+    </div>
 
 
     <!-- 6 - Troca de cor -->
 
-    <div id="caixa" style="width: 200px; height: 100px; background-color: lightblue;"></div>
+    <div class="atividade">
+        <h2>6 - Troca de cor</h2>
 
-    <button id="cor">Trocar cor</button>
+        <div id="caixa"></div>
 
-    <br><hr><br>
+        <button id="cor">Trocar cor</button>
+    </div>
 
 
     <!-- 7 - Alternando destaque -->
 
-    <p id="classes">Esse texto vai receber destaque</p>
+    <div class="atividade">
+        <h2>7 - Alternando destaque</h2>
 
-    <button id="troca">Ativar e desativar destaque</button>
+        <p id="classes">Esse texto vai receber destaque.</p>
 
-    <br><hr><br>
+        <button id="troca">Ativar e desativar destaque</button>
+    </div>
 
 
     <!-- 8 - Troca de imagem -->
 
-    <img src="Leon.jpg" alt="Leon" id="img" width="300">
+    <div class="atividade">
+        <h2>8 - Troca de imagem</h2>
 
-    <br>
+        <img src="Leon.jpg" alt="Leon" id="img">
 
-    <button id="leon">Leon</button>
-    <button id="ada">Ada</button>
-
-    <br><hr><br>
+        <button id="leon">Leon</button>
+        <button id="ada">Ada</button>
+    </div>
 
 
     <!-- 9 - Contador de caracteres -->
 
-    <input type="text" id="caracteres">
+    <div class="atividade">
+        <h2>9 - Contador de caracteres</h2>
 
-    <p id="contador">Quantidade de caracteres: 0</p>
+        <input type="text" id="caracteres" placeholder="Digite alguma coisa">
 
-    <br><hr><br>
+        <p id="contador">Quantidade de caracteres: 0</p>
+    </div>
 
 
     <!-- 10 - Verificação de idade -->
 
-    <input type="number" id="idade">
+    <div class="atividade">
+        <h2>10 - Verificação de idade</h2>
 
-    <button id="verificar">Verificar</button>
+        <input type="number" id="idade" placeholder="Digite sua idade">
 
-    <p id="resultadoIdade"></p>
+        <button id="verificar">Verificar</button>
 
-    <br><hr><br>
+        <p id="resultadoIdade" class="resultado"></p>
+    </div>
 
 
     <!-- 11 - Par ou ímpar -->
 
-    <input type="number" id="numero">
+    <div class="atividade">
+        <h2>11 - Par ou ímpar</h2>
 
-    <button id="parImpar">Verificar</button>
+        <input type="number" id="numero" placeholder="Digite um número">
 
-    <p id="resultadoNumero"></p>
+        <button id="parImpar">Verificar</button>
 
-    <br><hr><br>
+        <p id="resultadoNumero" class="resultado"></p>
+    </div>
 
 
     <!-- 12 - Média do aluno -->
 
-    <input type="number" id="nota1" placeholder="Nota 1">
-    <input type="number" id="nota2" placeholder="Nota 2">
-    <input type="number" id="nota3" placeholder="Nota 3">
+    <div class="atividade">
+        <h2>12 - Média do aluno</h2>
 
-    <button id="calcular">Calcular</button>
+        <input type="number" id="nota1" placeholder="Nota 1">
+        <input type="number" id="nota2" placeholder="Nota 2">
+        <input type="number" id="nota3" placeholder="Nota 3">
 
-    <p id="resultadoMedia"></p>
+        <br>
+
+        <button id="calcular">Calcular</button>
+
+        <p id="resultadoMedia" class="resultado"></p>
+    </div>
 
 
     <script src="Revisão05.js"></script>

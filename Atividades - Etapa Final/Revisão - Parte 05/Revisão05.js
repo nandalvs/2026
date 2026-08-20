@@ -69,6 +69,7 @@ let caixa = document.getElementById("caixa")
 let cor = document.getElementById("cor")
 
 cor.addEventListener("click", function(){
+
     let numero1 = Math.floor(Math.random() * 256)
     let numero2 = Math.floor(Math.random() * 256)
     let numero3 = Math.floor(Math.random() * 256)
@@ -127,11 +128,13 @@ let verificar = document.getElementById("verificar")
 let resultadoIdade = document.getElementById("resultadoIdade")
 
 verificar.addEventListener("click", function(){
+
     if (Number(idade.value) >= 18) {
         resultadoIdade.innerHTML = "Você é maior de idade"
     } else {
         resultadoIdade.innerHTML = "Você é menor de idade"
     }
+
 })
 
 console.log("----------------------")
@@ -144,11 +147,13 @@ let parImpar = document.getElementById("parImpar")
 let resultadoNumero = document.getElementById("resultadoNumero")
 
 parImpar.addEventListener("click", function(){
+
     if (Number(numero.value) % 2 == 0) {
         resultadoNumero.innerHTML = "O número é par"
     } else {
         resultadoNumero.innerHTML = "O número é ímpar"
     }
+
 })
 
 console.log("----------------------")
@@ -173,6 +178,7 @@ calcular.addEventListener("click", function(){
     } else {
         resultadoMedia.innerHTML = "Média: " + media.toFixed(1) + " - Reprovado"
     }
+
 })
 
 console.log("----------------------")
