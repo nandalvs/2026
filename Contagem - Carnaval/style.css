@@ -1,0 +1,92 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #ff0080, #7b2cbf, #008cff);
+    color: white;
+    text-align: center;
+}
+
+header {
+    padding: 40px 20px;
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+header h1 {
+    font-size: 50px;
+    margin: 0;
+    text-shadow: 3px 3px 5px black;
+}
+
+header p {
+    font-size: 20px;
+}
+
+main {
+    width: 85%;
+    max-width: 900px;
+    margin: 30px auto;
+}
+
+.imagem-principal img {
+    width: 100%;
+    max-height: 500px;
+    object-fit: cover;
+    border-radius: 25px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+.contagem {
+    margin: 35px 0;
+    padding: 35px 20px;
+    background-color: white;
+    color: #7b2cbf;
+    border-radius: 25px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.contagem h2 {
+    font-size: 30px;
+    margin-top: 0;
+}
+
+#carnaval {
+    font-size: 28px;
+    color: #ff0080;
+    background-color: #fff0fa;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.texto {
+    margin: 35px 0;
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.25);
+    border-radius: 25px;
+}
+
+.texto h2 {
+    font-size: 30px;
+}
+
+.texto p {
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+.imagem-secundaria {
+    margin: 35px 0;
+}
+
+.imagem-secundaria img {
+    width: 100%;
+    max-height: 600px;
+    object-fit: cover;
+    border-radius: 25px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+footer {
+    padding: 25px;
+    background-color: rgba(0, 0, 0, 0.3);
+    font-size: 20px;
+}
