@@ -1,0 +1,34 @@
+{
+  "expo": {
+    "name": "Kitty",
+    "slug": "kitty-app",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "backgroundColor": "#00031D",
+    "plugins": [
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/adaptive-icon.png",
+          "resizeMode": "contain",
+          "backgroundColor": "#00031D"
+        }
+      ]
+    ],
+    "android": {
+      "package": "br.com.nanda.kitty",
+      "versionCode": 1,
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#00031D"
+      }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "5b7e50de-7323-4d2b-ae51-dd7e64413a87"
+      }
+    }
+  }
+}
