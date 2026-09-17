@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moji Matcha Café</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="moji.png" alt="Moji Matcha">
+            <div>
+                <h1>Moji Matcha</h1>
+                <p>Cafeteria</p>
+            </div>
+        </div>
+        <nav>
+            <a href="#inicio">Início</a>
+            <a href="#cardapio">Cardápio</a>
+            <a href="#pedido">Pedido</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio" class="inicio">
+            <div class="inicio-texto">
+                <p class="subtitulo">UM MOMENTO DE CALMA</p>
+                <h2>Seu cantinho para<br><span>saborear matcha.</span></h2>
+                <p>Escolha sua bebida favorita e monte seu pedido de um jeito simples e especial.</p>
+                <a class="botao" href="#cardapio">Ver cardápio</a>
+            </div>
+            <div class="inicio-imagem">
+                <img src="Banner moji Matcha.jpg" alt="Moji Matcha Café">
+            </div>
+        </section>
+
+        <section id="cardapio" class="cardapio">
+            <div class="titulo-secao">
+                <p class="subtitulo">CARDÁPIO</p>
+                <h2>Escolha sua bebida</h2>
+                <p>Adicione suas favoritas ao pedido.</p>
+            </div>
+
+            <div class="produtos">
+                <div class="produto">
+                    <div class="produto-imagem">
+                        <img src="moji.png" alt="Matcha Latte">
+                    </div>
+                    <div class="produto-info">
+                        <h3>Matcha Latte</h3>
+                        <p>Matcha cremoso com leite e um toque suave.</p>
+                        <strong>R$ 16,90</strong>
+                        <button onclick="adicionarBebida('Matcha Latte', 16.90)">Adicionar</button>
+                    </div>
+                </div>
+
+                <div class="produto">
+                    <div class="produto-imagem">
+                        <img src="moji.png" alt="Iced Matcha">
+                    </div>
+                    <div class="produto-info">
+                        <h3>Iced Matcha</h3>
+                        <p>Matcha gelado, refrescante e delicado.</p>
+                        <strong>R$ 15,90</strong>
+                        <button onclick="adicionarBebida('Iced Matcha', 15.90)">Adicionar</button>
+                    </div>
+                </div>
+
+                <div class="produto">
+                    <div class="produto-imagem">
+                        <img src="moji.png" alt="Matcha Strawberry">
+                    </div>
+                    <div class="produto-info">
+                        <h3>Matcha Strawberry</h3>
+                        <p>Matcha com morango para uma combinação especial.</p>
+                        <strong>R$ 18,90</strong>
+                        <button onclick="adicionarBebida('Matcha Strawberry', 18.90)">Adicionar</button>
+                    </div>
+                </div>
+
+                <div class="produto">
+                    <div class="produto-imagem">
+                        <img src="moji.png" alt="Chá Matcha">
+                    </div>
+                    <div class="produto-info">
+                        <h3>Chá Matcha</h3>
+                        <p>Uma opção clássica para apreciar o sabor do matcha.</p>
+                        <strong>R$ 12,90</strong>
+                        <button onclick="adicionarBebida('Chá Matcha', 12.90)">Adicionar</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="pedido" class="pedido">
+            <div class="titulo-secao">
+                <p class="subtitulo">SEU PEDIDO</p>
+                <h2>Monte seu pedido</h2>
+                <p>Digite uma bebida ou escolha uma das opções do cardápio.</p>
+            </div>
+
+            <div class="adicionar">
+                <input type="text" id="bebida" placeholder="Digite o nome da bebida">
+                <button onclick="adicionarBebidaDigitada()">Adicionar bebida</button>
+            </div>
+
+            <div class="pedido-caixa">
+                <div class="pedido-topo">
+                    <h3>Lista de bebidas</h3>
+                    <span id="quantidade-total">0 itens</span>
+                </div>
+
+                <div id="lista-bebidas">
+                    <p class="vazio">Seu pedido está vazio.</p>
+                </div>
+
+                <div class="total">
+                    <span>Total</span>
+                    <strong id="valor-total">R$ 0,00</strong>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <img src="moji.png" alt="Moji">
+        <div>
+            <h3>Moji Matcha</h3>
+            <p>Um lugar para pausar, respirar e apreciar.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
