@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Previsão do Tempo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="clima">
+
+        <header>
+            <div>
+                <h1>Previsão do Tempo</h1>
+                <p>Consulte o clima da sua cidade</p>
+            </div>
+
+            <div class="icone-topo">☁️</div>
+        </header>
+
+        <section class="pesquisa">
+            <input type="text" id="input" placeholder="Digite o nome da cidade">
+            <button id="botao">Pesquisar</button>
+        </section>
+
+        <section class="resultado">
+
+            <div class="titulo-resultado">
+                <h2>Clima atual</h2>
+                <span>● AO VIVO</span>
+            </div>
+
+            <div id="resultado">
+
+                <div class="inicio">
+                    <div class="icone-inicio">🌤️</div>
+                    <h2>Consulte o clima</h2>
+                    <p>Digite uma cidade acima para ver a previsão do tempo.</p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <footer>
+            <p>Dados meteorológicos fornecidos pela Open-Meteo</p>
+        </footer>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

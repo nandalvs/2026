@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokédex</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="pokedex">
+
+        <div class="topo">
+
+            <div class="luz-grande"></div>
+
+            <div class="luzes">
+                <span class="luz azul"></span>
+                <span class="luz amarelo"></span>
+                <span class="luz verde"></span>
+            </div>
+
+        </div>
+
+        <div class="conteudo">
+
+            <h1>POKÉDEX</h1>
+            <p class="subtitulo">Pokémon Database</p>
+
+            <div class="pesquisa">
+                <input type="text" id="input" placeholder="Digite o nome do Pokémon">
+                <button id="botao">BUSCAR</button>
+            </div>
+
+            <div class="tela">
+
+                <div class="cabecalho">
+                    <span>POKÉMON INFORMATION</span>
+                    <span class="online">● ONLINE</span>
+                </div>
+
+                <div id="resultado">
+
+                    <div class="mensagem-inicial">
+                        <div class="pokebola">◓</div>
+                        <h2>Pokédex pronta!</h2>
+                        <p>Digite o nome de um Pokémon para começar.</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="controles">
+
+                <div class="botao-redondo"></div>
+
+                <div class="botoes">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+                <div class="botao-amarelo"></div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
