@@ -1,0 +1,135 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #100e19;
+    color: #f5f3ff;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+}
+
+h1 {
+    color: #c4a5ff;
+    font-size: 32px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+body > label {
+    width: 100%;
+    max-width: 430px;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+input[type="number"] {
+    width: 80px;
+    padding: 10px;
+    margin-left: 8px;
+    background-color: #211d30;
+    color: white;
+    border: 1px solid #65518c;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+body > div {
+    width: 100%;
+    max-width: 430px;
+    padding: 20px;
+    background-color: #1b1727;
+    border: 1px solid #393047;
+    border-radius: 14px;
+    margin-bottom: 22px;
+}
+
+body > div label {
+    display: block;
+    margin-bottom: 16px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+body > div label:last-child {
+    margin-bottom: 0;
+}
+
+input[type="checkbox"] {
+    accent-color: #a477f5;
+    margin-right: 8px;
+    cursor: pointer;
+}
+
+button {
+    background-color: #9565e8;
+    color: white;
+    border: none;
+    border-radius: 9px;
+    padding: 13px 22px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover {
+    background-color: #b08af7;
+    color: #171020;
+}
+
+#gerar {
+    width: 100%;
+    max-width: 430px;
+}
+
+#resultado {
+    width: 100%;
+    max-width: 430px;
+    min-height: 55px;
+    margin-top: 22px;
+    margin-bottom: 15px;
+    padding: 16px;
+    background-color: #211d30;
+    border: 1px solid #65518c;
+    border-radius: 10px;
+    color: #d8c5ff;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    overflow-wrap: anywhere;
+}
+
+#copiar {
+    width: 100%;
+    max-width: 430px;
+    background-color: #302641;
+    border: 1px solid #8062ad;
+}
+
+#copiar:hover {
+    background-color: #46345f;
+    color: white;
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 26px;
+    }
+
+    body {
+        padding: 18px;
+    }
+
+    body > div {
+        padding: 16px;
+    }
+}
